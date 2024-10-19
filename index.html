@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedágio</title>
+</head>
+<body>
+
+    <div class="mid">
+
+        <h2>Para saber o preço a ser pago no Pedágio, por favor, responda as caixas abaixo com as informações solicitadas</h2>
+
+        <label for="placaCarro">Número da placa</label>
+        <input maxlength="7" id="placaCarro" type="text" placeholder="EX: ABCD-123">
+
+        <label for="horaSaida">A hora na qual o veículo passou pela primeira parada</label>
+        <input type="time" id="horaSaida">
+
+        <label for="horaChegada">A hora na qual o veículo passou pela segunda parada</label>
+        <input type="time" id="horaChegada">
+
+        <label>Clique no botão abaixo para calcular o preço do pedágio com base na velocidade média do veículo:</label>
+        <button id="bnt">Calcular</button>
+
+        <label>Clique no botão abaixo para limpar os resultados exibidos:</label>
+        <button id="limparResultados">Limpar Resultados</button>
+
+        <label>Clique no botão abaixo para exibir um resumo do dia:</label>
+        <button id="exibirResumo">Exibir Resumo</button>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
